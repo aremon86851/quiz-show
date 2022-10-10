@@ -9,10 +9,10 @@ const Header = () => {
             </div>
             <div>
                 <ul className='items-center'>
-                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="">Home</Link>
-                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="">Topic's</Link>
-                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="">Statics</Link>
-                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="">Blog</Link>
+                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="/">Home</Link>
+                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="/topics">Topic's</Link>
+                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="/statistics">Statistics</Link>
+                    <Link className='text-2xl font-medium mx-4 hover:text-red-600' to="/blog">Blog</Link>
                 </ul>
             </div>
         </div>
