@@ -11,10 +11,7 @@ const QuizDetails = ({ quiz }) => {
                 {
                     options.map((option, idx) => <QuizOptions key={idx} option={option} />)
                 }
-                <input type="radio" />
-                {
-                    { correctAnswer } && `<label>{option}</label>`
-                }
+
             </form>
         </div>
     );

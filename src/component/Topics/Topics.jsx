@@ -5,6 +5,7 @@ import Topic from '../Topic/Topic';
 const Topics = () => {
     return (
         <div>
+            <Topic />
         </div>
     );
 };
