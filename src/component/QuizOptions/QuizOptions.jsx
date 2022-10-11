@@ -1,16 +1,12 @@
 import React from 'react';
 
-const QuizOptions = ({ option }) => {
+const QuizOptions = ({ option, handleToCorrect }) => {
     return (
         <div>
-            <div>
-                <input type="radio" />
-                <label for="">{option}</label>
+            <div onClick={() => handleToCorrect(option)} className='shadow-lg my-4 mx-2 p-2 rounded-lg text-center hover:cursor-pointer'>
+                <p>{option}.</p>
             </div>
-            {
-
-            }
-        </div>
+        </div >
     );
 };
 
