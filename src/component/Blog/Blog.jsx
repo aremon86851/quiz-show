@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mx-44 mt-10'>
+        <div className='md:mx-44 mx-5 mt-10'>
             <div>
                 <p className='text-2xl'><span className='font-bold'>Q: </span><small>What is the purpose of React Router ?</small></p>
                 <p className='text-2xl'><span className='font-bold'>A: </span><small>React Router is a standard library for routing in React.At its heart, React Router is a state container for the current location , or URL. It keeps track of the location and renders different "React" s as it changes, and it also gives you tools to update the location using "Link" s and the history API.</small></p>
