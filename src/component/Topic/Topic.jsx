@@ -4,7 +4,6 @@ import DestructureTopic from '../DestructureTopic/DestructureTopic';
 
 const Topic = () => {
     const getTopics = useContext(QuizContext)
-
     return (
         <div className='my-10'>
             <h2 className='text-center text-5xl my-10 font-semibold'>Topics</h2>
