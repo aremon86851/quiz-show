@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const QuizDetails = ({ quiz }) => {
     // console.log(quiz)
-    const { question, options, correctAnswer, id } = quiz
-    const handleToCorrect = answer => {
+    const { question, options, correctAnswer, id } = quiz;
+    let handleToCorrect = answer => {
         if (correctAnswer === answer) {
             toast('Your answer is Correct', {
                 position: "top-center",
@@ -25,7 +25,7 @@ const QuizDetails = ({ quiz }) => {
                 position: "top-center",
                 autoClose: 1000,
                 hideProgressBar: false,
-                closeOnClick: true,
+                closeOnClick: false,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
@@ -37,7 +37,7 @@ const QuizDetails = ({ quiz }) => {
         position: "top-right",
         autoClose: 1000,
         hideProgressBar: false,
-        closeOnClick: true,
+        closeOnClick: false,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
@@ -50,7 +50,7 @@ const QuizDetails = ({ quiz }) => {
                 <ToastContainer />
             </div>
             {
-                options.map((option, idx) => <QuizOptions key={idx} option={option} handleToCorrect={handleToCorrect} />)
+                options.map((option, idx) => <QuizOptions key={idx} option={option} handleToCorrect={handleToCorrect} ></QuizOptions>)
             }
         </div>
     );
