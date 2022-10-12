@@ -44,9 +44,9 @@ const QuizDetails = ({ quiz }) => {
         theme: "light",
     });
     return (
-        <div className='bg-slate-100 my-4 p-10  rounded-lg'>
+        <div className='bg-slate-100 my-4 p-2 md:p-10  rounded-lg'>
             <div className='flex justify-between items-center'>
-                <p><span className='font-bold'>Quiz :- </span>{question}.</p> <EyeIcon className='w-6 h-6 cursor-pointer' onClick={notify} />
+                <p><span className='font-bold'>Quiz :- </span>{question}.</p> <EyeIcon className='md:w-6 w-10 h-6 cursor-pointer' onClick={notify} />
                 <ToastContainer />
             </div>
             {

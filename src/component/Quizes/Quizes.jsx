@@ -14,7 +14,7 @@ const Quizes = () => {
         <div>
             <h2 className='text-4xl font-semibold text-center mt-5'>Quiz for "{data.name}"</h2>
             <p className='text-center font-semibold'><small>(Click to the right answer)</small></p>
-            <div className='w-2/4 my-0 mx-auto'>
+            <div className='md:w-2/4 my-0 w-full mx-auto'>
                 {
                     allQuiz.map(quiz => <QuizDetails key={quiz.id} quiz={quiz} />)
                 }
