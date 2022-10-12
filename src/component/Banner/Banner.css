@@ -1,0 +1,5 @@
+@media only screen and (max-width: 310px) {
+    .banner-heading {
+        font-size: 30px !important;
+    }
+}
